@@ -1,7 +1,40 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+dot_net = Language.create(name: ".NET", icon: "https://buttercms.com/static/images/home/lang/dotnet.90849ef3861d.svg")
+c = Language.create(name: "C", icon: "https://png.icons8.com/color/1600/c-programming.png")
+cpp = Language.create(name: "C++", icon: "https://banner2.kisspng.com/20180408/pew/kisspng-the-c-programming-language-computer-icons-comput-programming-5acadc2dec0be9.0824244915232440779669.jpg")
+clojure = Language.create(name: "Clojure", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/1024px-Clojure_logo.svg.png")
+clojure_s = Language.create(name: "ClojureScript", icon: "https://camo.githubusercontent.com/5656aa6cc7a441294142817cf8fdeccb27ebe768/687474703a2f2f692e696d6775722e636f6d2f464958626737562e706e67")
+dart = Language.create(name: "Dart", icon: "https://i.pinimg.com/736x/a6/75/cb/a675cb93b75d5f1656c920dceecdcb38--bootcamp-sade.jpg")
+elixer = Language.create(name: "Elixer", icon: "https://cdn.slant.co/a76daa99-0b36-4ea1-9a07-1c7e79f8a09b/-/format/jpeg/-/progressive/yes/-/preview/480x480/")
+go = Language.create(name: "Go", icon: "https://sdtimes.com/wp-content/uploads/2018/02/golang.sh_-490x490.png")
+java = Language.create(name: "Java", icon: "http://technuf.com/wp-content/uploads/2014/10/java_flurry_icon_by_flakshack-d4jt21r.png")
+js = Language.create(name: "JavaScript", icon: "https://lorecentral.b-cdn.net/wp-content/uploads/2017/11/Javascript-shield.png")
+julia = Language.create(name: "Julia", icon: "https://forio.com/app/showcase/route-optimizer/styles/assets/logos/julia.svg")
+php = Language.create(name: "PHP", icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/e6/5b/e9/e65be9a2-27fc-2759-8bc2-f9911920d386/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/246x0w.jpg")
+python = Language.create(name: "Python", icon: "https://res.cloudinary.com/teepublic/image/private/s--puxPvYA9--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_191919,e_outline:48/co_191919,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1507047612/production/designs/1946304_1.jpg")
+ruby = Language.create(name: "Ruby", icon: "https://www.ruby-lang.org/images/header-ruby-logo.png")
+rust = Language.create(name: "Rust", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/2000px-Rust_programming_language_black_logo.svg.png")
+scala = Language.create(name: "Scala", icon: "https://meterpreter.org/wp-content/uploads/2017/10/Scala.png")
+typescript = Language.create(name: "TypeScript", icon: "https://d1eq8vvyuam4eq.cloudfront.net/tutorials/typescript/logo-typescript.svg?ver=1528125604")
+
+Project.create(language: rust, name: "Servo", url: "https://github.com/servo/servo/labels/E-easy", description: "A browser engine designed for applications including embedded use")
+Project.create(language: rust, name: "Rust-Clippy", url: "https://github.com/rust-lang-nursery/rust-clippy/labels/good%20first%20issue", description: "A bunch of lints to catch common mistakes and improve Rust code")
+Project.create(language: rust, name: "Rustfmt", url: "https://github.com/rust-lang-nursery/rustfmt/labels/good-first-issue", descriptionL "A tool for formatting Rust code according to style guidelines.")
+Project.create(language: rust, name: "Iron", url: "https://github.com/iron/iron/labels/easy", description: "An extensible, concurrent web framework for Rust.")
+
+Project.create(language: scala, name: "Twitter Util", url: "https://github.com/twitter/util/labels/Starter", description: "Wonderful reusable code from Twitter")
+Project.create(language: scala, name: "playframework", url: "https://github.com/playframework/playframework/labels/good%20first%20issue", description: "The High Velocity Web Framework")
+
+Project.create(language: typescript, name: "TypeScript", url: "https://github.com/Microsoft/TypeScript/labels/good%20first%20issue", description: "A superset of JavaScript that compiles to clean JavaScript output.")
+Project.create(language: typescript, name: "Visual Studio Code", url: "https://github.com/Microsoft/vscode/labels/good%20first%20issue", description: "A new type of tool that combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle.")
+Project.create(language: typescript, name: "TSLint", url: "https://github.com/palantir/tslint/labels/good%20first%20issue", description: "An extensible static analysis tool that checks TypeScript code for readability, maintainability, and functionality errors.")
+
+
+Project.create(language: ruby, name: "JRuby", url: "https://github.com/jruby/jruby/labels/beginner", description: "An implementation of Ruby on the Java Virtual Machine.")
+Project.create(language: ruby, name: "puppet-mcollective", url: "https://github.com/puppet-community/puppet-mcollective/labels/beginner%20friendly", description: "MCollective Server and Client Puppet Module.")
+Project.create(language: ruby, name: "Sinatra", url: "https://github.com/sinatra/sinatra/labels/good%20first%20issue", description: "Classy web-development dressed in a DSL.")
+Project.create(language: ruby, name: "Goby", url: "https://github.com/nskins/goby", description: "Framework for developing text-RPGs.")
+Project.create(language: ruby, name: "Hanami", url: "https://github.com/search?utf8=%E2%9C%93&q=user%3Ahanami+state%3Aopen+label%3Aeasy&type=Issues&ref=searchresults", description: "A modern framework for Ruby.")
+Project.create(language: ruby, name: "operationcode", url: "https://github.com/OperationCode/operationcode/labels/beginner%20friendly", description: "An open source community dedicated to getting military veterans coding.")
+Project.create(language: ruby, name: "chef", url: "https://github.com/chef/chef/labels/Type%3A%20Jump%20In", description: "A systems integration framework, built to bring the benefits of configuration management to your entire infrastructure")
+Project.create(language: ruby, name: "ohai", url: "https://github.com/chef/ohai/labels/Type%3A%20Jump%20In", description: "Ohai profiles your system and emits JSON")
+Project.create(language: ruby, name: "PublicLab.org", url: "https://github.com/publiclab/plots2/labels/first-timers-only", description: "An open source publishing platform for environmental projects.")
