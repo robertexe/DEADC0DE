@@ -28,7 +28,7 @@ Project.create(language: c, name: "Neovim", url: "https://github.com/neovim/neov
 ## C++
 
 Project.create(language: cpp, name: "electron", url: "https://github.com/electron/electron/labels/good-beginner-issue", description: "Build cross platform desktop apps with JavaScript, HTML, and CSS")
-Project.create(language: cpp, name: "tensorflow", url: "https://github.com/tensorflow/tensorflow/labels/stat%3Acontributions%20welcome" description: "Computation using data flow graphs for scalable machine learning")
+Project.create(language: cpp, name: "tensorflow", url: "https://github.com/tensorflow/tensorflow/labels/stat%3Acontributions%20welcome", description: "Computation using data flow graphs for scalable machine learning")
 
 ## Clojure
 
