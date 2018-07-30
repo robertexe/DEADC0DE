@@ -1,3 +1,6 @@
+Project.destroy_all
+Language.destroy_all
+
 dot_net = Language.create(name: ".NET", icon: "https://buttercms.com/static/images/home/lang/dotnet.90849ef3861d.svg")
 c = Language.create(name: "C", icon: "https://png.icons8.com/color/1600/c-programming.png")
 cpp = Language.create(name: "C++", icon: "https://banner2.kisspng.com/20180408/pew/kisspng-the-c-programming-language-computer-icons-comput-programming-5acadc2dec0be9.0824244915232440779669.jpg")
@@ -148,19 +151,25 @@ Project.create(language: python, name: "Concept to Clinic", url: "https://github
 Project.create(language: python, name: "Zulip", url: "https://github.com/zulip/zulip/labels/good%20first%20issue", description: "Powerful open source group chat.")
 Project.create(language: python, name: "cookiecutter", url: "https://github.com/audreyr/cookiecutter/labels/low-hanging-fruit", description: "A command-line utility that creates projects from cookiecutters (project templates). E.g. Python package projects, jQuery plugin projects.")
 
+#rust
 
 Project.create(language: rust, name: "Servo", url: "https://github.com/servo/servo/labels/E-easy", description: "A browser engine designed for applications including embedded use")
 Project.create(language: rust, name: "Rust-Clippy", url: "https://github.com/rust-lang-nursery/rust-clippy/labels/good%20first%20issue", description: "A bunch of lints to catch common mistakes and improve Rust code")
 Project.create(language: rust, name: "Rustfmt", url: "https://github.com/rust-lang-nursery/rustfmt/labels/good-first-issue", description: "A tool for formatting Rust code according to style guidelines.")
 Project.create(language: rust, name: "Iron", url: "https://github.com/iron/iron/labels/easy", description: "An extensible, concurrent web framework for Rust.")
 
+#Scala
+
 Project.create(language: scala, name: "Twitter Util", url: "https://github.com/twitter/util/labels/Starter", description: "Wonderful reusable code from Twitter")
 Project.create(language: scala, name: "playframework", url: "https://github.com/playframework/playframework/labels/good%20first%20issue", description: "The High Velocity Web Framework")
+
+#TypeScript
 
 Project.create(language: typescript, name: "TypeScript", url: "https://github.com/Microsoft/TypeScript/labels/good%20first%20issue", description: "A superset of JavaScript that compiles to clean JavaScript output.")
 Project.create(language: typescript, name: "Visual Studio Code", url: "https://github.com/Microsoft/vscode/labels/good%20first%20issue", description: "A new type of tool that combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle.")
 Project.create(language: typescript, name: "TSLint", url: "https://github.com/palantir/tslint/labels/good%20first%20issue", description: "An extensible static analysis tool that checks TypeScript code for readability, maintainability, and functionality errors.")
 
+#Ruby
 
 Project.create(language: ruby, name: "JRuby", url: "https://github.com/jruby/jruby/labels/beginner", description: "An implementation of Ruby on the Java Virtual Machine.")
 Project.create(language: ruby, name: "puppet-mcollective", url: "https://github.com/puppet-community/puppet-mcollective/labels/beginner%20friendly", description: "MCollective Server and Client Puppet Module.")
