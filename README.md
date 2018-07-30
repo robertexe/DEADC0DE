@@ -10,7 +10,7 @@ Project.create(name: "Neovim", url: "https://github.com/neovim/neovim/labels/goo
 ## C++
 
 Project.create(name: "electron", url: "https://github.com/electron/electron/labels/good-beginner-issue", description: "Build cross platform desktop apps with JavaScript, HTML, and CSS")
-Project.create(name: "tensorflow", url: "https://github.com/tensorflow/tensorflow/labels/stat%3Acontributions%20welcome"stat:contributions welcome Computation using data flow graphs for scalable machine learning")
+Project.create(name: "tensorflow", url: "https://github.com/tensorflow/tensorflow/labels/stat%3Acontributions%20welcome" description: "Computation using data flow graphs for scalable machine learning")
 
 ## Clojure
 
