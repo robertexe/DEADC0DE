@@ -7,7 +7,7 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project.new(project_params)
+    @project = Project.new(project_params)
     if @project.save
       render json: @project, status: 201
     else
@@ -35,7 +35,7 @@ class ProjectsController < ApplicationController
   end
 
   private
-  
+
   def project_params
     params.require(:project).permit(:name, :description, :url, :language_id)
   end
