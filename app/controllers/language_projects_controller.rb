@@ -1,2 +1,0 @@
-class LanguageProjectsController < ApplicationController
-end

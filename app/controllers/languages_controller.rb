@@ -4,4 +4,5 @@ class LanguagesController < ApplicationController
     @languages = Language.all
     render json: @languages
   end
+
 end
