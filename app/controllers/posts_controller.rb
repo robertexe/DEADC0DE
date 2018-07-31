@@ -1,36 +1,44 @@
 class PostsController < ApplicationController
+
 	def index
+		@language = Language.find(params[:language_id])
+		@posts = @language.posts
 		render json: @posts, status: 200
 	end
 
 	def create
-		@comment = Comment.new(comment_params)
-		if @comment.save
-			render json: @comment, status: 201
+		@post = Post.new(post_params)
+		if @post.save
+			render json: @post, status: 201
 		else
-			render json: @comment.errors, status: 400
+			render json: @post.errors, status: 400
 		end
 	end
 
+	def show
+		set_post
+		render json: @post
+	end
+
 	def update
-		set_comment
-		if	@comment.update(comment_params)
-			render json: @comment, status: 202
+		set_post
+		if @post.update(post_params)
+			render json: @post, status: 202
 		else
-			render json: @comment.errors, status: 400
+			render json: @post, status: 400
 		end
 	end
 
 	def destroy
-		set_comment
-		@comment.destroy
+		set_post
+		@post.destroy
 	end
 
 	private
-	def set_comment
-		@comment = Comment.find(params[:id])
+	def set_post
+		@post = Post.find(params[:id])
 	end
-	def comment_params
-		params.require(:comment).permite(:user_id, :content, :post_id)
+	def post_params
+		params.require(:post).permite(:title, :content, :repo_link, :language_id, :user_id)
 	end
 end
