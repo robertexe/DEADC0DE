@@ -7,9 +7,9 @@ Comment.destroy_all
 
 dot_net = Language.create(name: ".NET", icon: "https://buttercms.com/static/images/home/lang/dotnet.90849ef3861d.svg")
 c = Language.create(name: "C", icon: "https://png.icons8.com/color/1600/c-programming.png")
-cpp = Language.create(name: "C++", icon: "https://banner2.kisspng.com/20180408/pew/kisspng-the-c-programming-language-computer-icons-comput-programming-5acadc2dec0be9.0824244915232440779669.jpg")
+cpp = Language.create(name: "C++", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcXIqDofCXZ5qze6rH8TqOplMaWpRDX-MvKRSzv-TFcIP-sZWdTw")
 clojure = Language.create(name: "Clojure", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/1024px-Clojure_logo.svg.png")
-clojure_s = Language.create(name: "ClojureScript", icon: "https://camo.githubusercontent.com/5656aa6cc7a441294142817cf8fdeccb27ebe768/687474703a2f2f692e696d6775722e636f6d2f464958626737562e706e67")
+clojure_s = Language.create(name: "ClojureScript", icon: "https://raw.githubusercontent.com/cljs/logo/master/cljs-white.png")
 dart = Language.create(name: "Dart", icon: "https://i.pinimg.com/736x/a6/75/cb/a675cb93b75d5f1656c920dceecdcb38--bootcamp-sade.jpg")
 elixer = Language.create(name: "Elixer", icon: "https://cdn.slant.co/a76daa99-0b36-4ea1-9a07-1c7e79f8a09b/-/format/jpeg/-/progressive/yes/-/preview/480x480/")
 go = Language.create(name: "Go", icon: "https://sdtimes.com/wp-content/uploads/2018/02/golang.sh_-490x490.png")
