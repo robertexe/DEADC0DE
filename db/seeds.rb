@@ -1,5 +1,9 @@
 Project.destroy_all
 Language.destroy_all
+User.destroy_all
+UserProject.destroy_all
+Post.destroy_all
+Comment.destroy_all
 
 dot_net = Language.create(name: ".NET", icon: "https://buttercms.com/static/images/home/lang/dotnet.90849ef3861d.svg")
 c = Language.create(name: "C", icon: "https://png.icons8.com/color/1600/c-programming.png")
@@ -180,3 +184,17 @@ Project.create(language: ruby, name: "operationcode", url: "https://github.com/O
 Project.create(language: ruby, name: "chef", url: "https://github.com/chef/chef/labels/Type%3A%20Jump%20In", description: "A systems integration framework, built to bring the benefits of configuration management to your entire infrastructure")
 Project.create(language: ruby, name: "ohai", url: "https://github.com/chef/ohai/labels/Type%3A%20Jump%20In", description: "Ohai profiles your system and emits JSON")
 Project.create(language: ruby, name: "PublicLab.org", url: "https://github.com/publiclab/plots2/labels/first-timers-only", description: "An open source publishing platform for environmental projects.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
