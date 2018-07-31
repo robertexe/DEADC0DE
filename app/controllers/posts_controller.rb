@@ -22,6 +22,7 @@ class PostsController < ApplicationController
 
 	def update
 		set_post
+		byebug
 		if @post.update(post_params)
 			render json: @post, status: 202
 		else
@@ -35,10 +36,12 @@ class PostsController < ApplicationController
 	end
 
 	private
+
 	def set_post
 		@post = Post.find(params[:id])
 	end
+
 	def post_params
-		params.require(:post).permite(:title, :content, :repo_link, :language_id, :user_id)
+		params.require(:post).permit(:title, :content, :repo_link, :language_id, :user_id)
 	end
 end
