@@ -1,4 +1,3 @@
-
 Rails.application.routes.draw do
   resources :projects, except: :index
 
@@ -15,12 +14,3 @@ Rails.application.routes.draw do
     resources :comments, only: [:index, :create, :update, :destroy]
   end
 end
-
-
-##  /languages
-## /languages/ids/projects
-## /user/id/projects
-## /project/id
-## /posts
-## /languages/id/posts
-## /posts/id/comments
