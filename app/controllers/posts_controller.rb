@@ -1,6 +1,4 @@
 class PostsController < ApplicationController
-<<<<<<< HEAD
-=======
 
 	def index
 		@language = Language.find(params[:language_id])
@@ -43,5 +41,4 @@ class PostsController < ApplicationController
 	def post_params
 		params.require(:post).permite(:title, :content, :repo_link, :language_id, :user_id)
 	end
->>>>>>> e9a18ae52fcd00a40bf30e380ec6dfc759a24342
 end

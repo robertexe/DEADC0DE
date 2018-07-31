@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :projects, except: :index
   resources :user_projects, only: [:create, :destroy]
 
-  resources :users do
+  resources :users, only: :create do
     resources :user_projects, only: [:index]
   end
 
