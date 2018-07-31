@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
 
   def index
-    @language = Language.find(params[:id])
+    @language = Language.find(params[:language_id])
     @projects = @language.projects
     render json: @projects
   end
