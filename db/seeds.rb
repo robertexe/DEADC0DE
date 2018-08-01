@@ -1,9 +1,9 @@
-Project.destroy_all
-Language.destroy_all
-User.destroy_all
 UserProject.destroy_all
-Post.destroy_all
 Comment.destroy_all
+Post.destroy_all
+Project.destroy_all
+User.destroy_all
+Language.destroy_all
 
 dot_net = Language.create(name: ".NET", icon: "https://buttercms.com/static/images/home/lang/dotnet.90849ef3861d.svg")
 c = Language.create(name: "C", icon: "https://png.icons8.com/color/1600/c-programming.png")

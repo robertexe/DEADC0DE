@@ -1,3 +1,3 @@
 class LanguageSerializer < ActiveModel::Serializer
-  attributes :id, :name, :icon
+  attributes :id, :name, :icon, :projectcount
 end
