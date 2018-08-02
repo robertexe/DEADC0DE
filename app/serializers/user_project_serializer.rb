@@ -1,3 +1,3 @@
 class UserProjectSerializer < ActiveModel::Serializer
-  attributes :id, :user, :project
+  attributes :id, :project
 end

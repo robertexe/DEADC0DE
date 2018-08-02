@@ -1,8 +1,7 @@
 class PostsController < ApplicationController
 
 	def index
-		@language = Language.find(params[:language_id])
-		@posts = @language.posts
+		@posts = Post.all
 		render json: @posts, status: 200
 	end
 
