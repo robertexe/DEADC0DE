@@ -1,9 +1,8 @@
 class UserProjectsController < ApplicationController
 
 	def index
-		@user = User.find(params[:user_id])
-		@projects = @user.projects
-		render json: @projects
+		@user_projects = UserProject.where(user_id: params[:user_id])
+		render json: @user_projects
 	end
 
 	def create
