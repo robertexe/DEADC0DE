@@ -21,7 +21,7 @@ class PostsController < ApplicationController
 
 	def update
 		set_post
-		byebug
+		
 		if @post.update(post_params)
 			render json: @post, status: 202
 		else
