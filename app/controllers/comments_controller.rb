@@ -18,7 +18,7 @@ class CommentsController < ApplicationController
 
 	def update
 		set_comment
-		
+
 		if @comment.update(comment_params)
 			render json: @comment, status: 202
 		else
@@ -38,6 +38,6 @@ class CommentsController < ApplicationController
 	end
 
 	def comment_params
-		params.require(:comment).permite(:user_id, :content, :post_id)
+		params.require(:comment).permit(:user_id, :content, :post_id)
 	end
 end
