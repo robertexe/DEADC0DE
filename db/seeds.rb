@@ -20,7 +20,7 @@ php = Language.create(name: "PHP", icon: "https://is1-ssl.mzstatic.com/image/thu
 python = Language.create(name: "Python", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png")
 ruby = Language.create(name: "Ruby", icon: "https://webiconspng.com/wp-content/uploads/2017/09/Ruby-PNG-Image-80946.png")
 rust = Language.create(name: "Rust", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/2000px-Rust_programming_language_black_logo.svg.png")
-scala = Language.create(name: "Scala", icon: "https://meterpreter.org/wp-content/uploads/2017/10/Scala.png")
+scala = Language.create(name: "Scala", icon: "https://raw.githubusercontent.com/OlegIlyenko/scala-icon/master/scala-icon.png")
 typescript = Language.create(name: "TypeScript", icon: "https://d1eq8vvyuam4eq.cloudfront.net/tutorials/typescript/logo-typescript.svg?ver=1528125604")
 
 ## .NET
