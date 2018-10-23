@@ -5,9 +5,8 @@ Project.destroy_all
 User.destroy_all
 Language.destroy_all
 
-LibraryProject.destroy_all
 
-# dot_net = Language.create(name: ".NET", icon: "https://buttercms.com/static/images/home/lang/dotnet.90849ef3861d.svg")
+dot_net = Language.create(name: ".NET", icon: "https://buttercms.com/static/images/home/lang/dotnet.90849ef3861d.svg")
 c = Language.create(name: "C", icon: "https://png.icons8.com/color/1600/c-programming.png")
 cpp = Language.create(name: "C++", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcXIqDofCXZ5qze6rH8TqOplMaWpRDX-MvKRSzv-TFcIP-sZWdTw")
 clojure = Language.create(name: "Clojure", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/1024px-Clojure_logo.svg.png")

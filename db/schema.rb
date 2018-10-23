@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_17_202143) do
+ActiveRecord::Schema.define(version: 2018_08_03_172747) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,20 +30,6 @@ ActiveRecord::Schema.define(version: 2018_10_17_202143) do
     t.string "icon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "library_projects", force: :cascade do |t|
-    t.string "name"
-    t.string "platform"
-    t.text "description"
-    t.text "repository_url"
-    t.integer "stars"
-    t.integer "forks"
-    t.integer "project_id"
-    t.bigint "language_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["language_id"], name: "index_library_projects_on_language_id"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -83,7 +69,6 @@ ActiveRecord::Schema.define(version: 2018_10_17_202143) do
 
   add_foreign_key "comments", "posts"
   add_foreign_key "comments", "users"
-  add_foreign_key "library_projects", "languages"
   add_foreign_key "posts", "users"
   add_foreign_key "projects", "languages"
   add_foreign_key "user_projects", "projects"

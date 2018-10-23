@@ -9,9 +9,4 @@ class LanguagesController < ApplicationController
     render json: @languages
   end
 
-  def create
-    @language = Language.find(params[:_json])
-    Librarycb.execute(@language)
-  end
-
 end

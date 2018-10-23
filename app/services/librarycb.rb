@@ -27,11 +27,15 @@ class Librarycb
 	end
 
 	def filter_language(json)
-		buzz_items = ['beginner-friendly', 'beginner', 'first-timers', 'noob', 'newb', 'open-source', 'open source']
-		json.each do |pro|
-			##byebug
-			if pro['keywords'] & buzz_items == pro['keywords']
-				LibraryProject.find_or_create_by(
+		buzz_items = ['beginner-friendly', 'beginner', 'first-timers', 'noob', 'newb', 'first-timers-only', 'good first issue', 'junior job', 'easy', 'FirstTimers', 'beginner-project', 'starter']
+		counter = 0
+		data_set = json.each do |pro|
+			key_buzzwords = pro['keywords'] & buzz_items
+			byebug
+			puts key_buzzwords
+			if key_buzzwords.length > 1
+				byebug
+				@library_project = LibraryProject.find_or_create_by(
 					name: pro['name'],
 					platform: pro['platform'],
 					description: pro['description'],
@@ -39,10 +43,17 @@ class Librarycb
 					stars: pro['stars'],
 					forks: pro['forks'],
 					project_id: pro['project_id'],
-					language_id: @language.id
+					language_id: @language.id,
+					keywords: pro['keywords']
 				)
+				# if pro['keywords'].length > 0
+				# 	pro['keywords'].each do |word|
+				# 		@library_project['keywords'] << word
+				# 	end
+				# end
 			end
 		end
+		puts counter
 	end
 
 	def call_api
