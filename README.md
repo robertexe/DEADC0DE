@@ -11,20 +11,21 @@ Working on open source projects may be a little daunting for developers just sta
 
 - **These are the instructions to setup the environment for the back-end**
 
-- [DEADC0DE front-end](https://github.com/robertexe/DEADC0DE-front-end)
+- **Link to [DEADC0DE front-end](https://github.com/robertexe/DEADC0DE-front-end)
+
 
 
 ### This project requires **Ruby 2.5.1**
 
-1. Check ruby version
+Check ruby version
 ```
 ruby -v
 ```
-2. Use ruby 2.5.1
+Use ruby 2.5.1
 ```
 rvm use 2.5.1
 ```
-3. bundle install
+bundle install
 ```
 bundle install
 ```
@@ -32,7 +33,7 @@ bundle install
 
 This project uses `Postgresql` and `Rails`, These steps below set up our db environment
 
-*If you do not have Postgresql or Rails, please refer to the `Built With` section.*
+***If you do not have Postgresql or Rails, please refer to the `Built With` section.***
 
 ```
 rails db:create
