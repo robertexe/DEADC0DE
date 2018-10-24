@@ -1,4 +1,6 @@
 
+![DEADC0DE LOGO](app/assets/images/DEADCODE_FINAL.png?raw=true "DEADC0DE_FINAL")
+
 # DEADC0DE (back end)
 
 A platform where junior developers can find `beginner-friendly` open source projects. Users may save projects on to a queue and remove them as they go. Users can also ask for help by posting their own projects on to the forum section similar to Stackoverflow.
